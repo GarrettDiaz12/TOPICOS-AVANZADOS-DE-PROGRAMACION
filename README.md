@@ -45,10 +45,10 @@ import static InterfaceView.InterfazView.DECRYPT;
 import static InterfaceView.InterfazView.ENCRYPT;
 import static InterfaceView.InterfazView.SAVE;
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-//la clase InterfazView se encargar únicamente de la creación de la interfaz gráfica del programa ya que aquí definimos una interfaz con las principales //operaciones que el controlador previamente ocupa para hacer la manipulación de las vistas que nosotros creemos
-// PANEL es un contenedor y así mismo una ventana ya que su propósito es organizar los componentes de la ventana
-// Marco es una ventana en pleno funcionamiento con su título como sus iconos igualmente
-// Dialogo se puede considerar también como una ventana emergente cuando se necesita mostrar un mensaje
+la clase InterfazView se encargar únicamente de la creación de la interfaz gráfica del programa ya que aquí definimos una interfaz con las principales operaciones que el controlador previamente ocupa para hacer la manipulación de las vistas que nosotros creemos
+PANEL es un contenedor y así mismo una ventana ya que su propósito es organizar los componentes de la ventana
+Marco es una ventana en pleno funcionamiento con su título como sus iconos igualmente
+Dialogo se puede considerar también como una ventana emergente cuando se necesita mostrar un mensaje
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 package InterfaceView;
 public interface InterfazView {
@@ -263,13 +263,14 @@ public void SaveFile (String archivo2){
 }
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
-// Esta clase llamada controller es aquella de la comunicación entre la interfaz y el modelo donde están creados todos los métodos
-// que se utilizan para accionar los botones ya que cuando el usuario interactúe con la vista se ejecuten los eventos creados de manera
-// correcta que se recogerá con el controlador y lanzados por el modelo ya que cuando el modelo devuelva la información su actualiza de interfaz 
-// por esta simple razón la clase controller tendrá un objeto de clase View
-// En este controlador agregamos 4 acciones o eventos a los que  van a responder nuestros botones en la interfaz ya que la  primera asignada para el //cuatro text file que al momento de poner el nombre del archivo y se haga clic en el botón de OPEN FILE este muestre el texto creado después para el 
-//botón de encrypt se tomará la cadena string para hacer la conversión en base al modelo ASIIC y de igual manera con el botón de DESSENCRYPT y finalmente
-// el botón de SAVE FILE el cual se encargar de guardar la cadena String en un archivo.
+ Esta clase llamada controller es aquella de la comunicación entre la interfaz y el modelo donde están creados todos los métodos
+ que se utilizan para accionar los botones ya que cuando el usuario interactúe con la vista se ejecuten los eventos creados de manera
+ correcta que se recogerá con el controlador y lanzados por el modelo ya que cuando el modelo devuelva la información su actualiza de interfaz 
+ por esta simple razón la clase controller tendrá un objeto de clase View
+ En este controlador agregamos 4 acciones o eventos a los que  van a responder nuestros botones en la interfaz ya que la  primera asignada para el  
+ cuatro text file que al momento de poner el nombre del archivo y se haga clic en el botón de OPEN FILE este muestre el texto creado después para el 
+ botón de encrypt se tomará la cadena string para hacer la conversión en base al modelo ASIIC y de igual manera con el botón de DESSENCRYPT y finalmente
+ el botón de SAVE FILE el cual se encargar de guardar la cadena String en un archivo.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 package InterfaceView;
 import java.awt.event.ActionEvent;
