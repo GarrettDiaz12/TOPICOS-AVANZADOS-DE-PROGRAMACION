@@ -60,6 +60,7 @@ public interface InterfazView {
     static final String SAVE = "Save text";
     static final String ENCRYPT = "Encrypt";
     static final String DECRYPT = "Decrypt";
+    }
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 Lo primero que se hace es crear un marco donde todos los componentes que formaran nuestro programa ya que se crea nuestra clase View que es una 
 subclase de los Jframe ya que utilizaremos una instancia de la clase View para así poder mostrar una venta ya aue aqui nosotros podemos colocar el 
@@ -148,7 +149,7 @@ OpenFile: El es el encargado de ir a la ruta de donde se creó el archivo.
 Savefile: Es el método el cual nos permite dar y guardar el archivo con nuestra cadena de string convertida.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 package InterfaceView;
-import java.io.BufferedReader;           
+import java.io.BufferedReader;             //LIBRERIAS UTILIZADAS
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -309,6 +310,7 @@ public class Controller implements ActionListener {
                 break;
         }
     }
+
     public void run() {
          view.setLocationRelativeTo(null); 
          view.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -316,6 +318,7 @@ public class Controller implements ActionListener {
          view.setVisible(true);
     }
 }
+
 ---------------------------------------------------------------------------------------------------------------------------------------------
 En esta clase basicamente es la encargada de correr el programa
 ---------------------------------------------------------------------------------------------------------------------------------------------
